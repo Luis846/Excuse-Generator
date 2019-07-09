@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OMG! you will not believe me but...</h1>
+    <p id="excuse"></p>
+
+    <script>
+
+
+        let noun = ["My dog ", "Homeless Joe ", "My moms bear "];
+        let verb=["ate ", "burned ", "stole ", "killed ", "destroyed ", "broke "];
+        let avoid =["my homework", "my final project", "my shoes"];
+        let time = [" yesterday", " an hour ago"];
+
+        let randomExcuseNoun = noun[Math.floor(noun.length * Math.random())];
+        let randomVerb = verb[Math.floor(verb.length * Math.random())];
+        let randomAvoid = avoid[Math.floor(avoid.length * Math.random())];
+        let randomTime = time[Math.floor(time.length * Math.random())];
+
+        let finalExcuse = randomExcuseNoun + randomVerb + randomAvoid + randomTime;
+        document.getElementById("excuse").innerHTML = finalExcuse;
+    </script>
+</body>
+</html>
